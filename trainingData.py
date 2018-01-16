@@ -26,7 +26,6 @@ timestamp = int(time.time())
 
 p = re.compile('[\S]+')
 
-# maxReviewsCount = 1266891
 maxReviewsCount = 10
 f = open("data/train-" + str(maxReviewsCount) + "-" + str(timestamp) + ".txt", 'w+')
 i = 1
