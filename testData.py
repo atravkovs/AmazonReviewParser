@@ -1,5 +1,4 @@
 import gzip
-import time
 import re
 import sys
 import html
@@ -27,11 +26,9 @@ print("Start From: " + str(startFrom))
 print("Starting test data generation...")
 print("------------")
 
-timestamp = int(time.time())
-
 p = re.compile('[\S]+')
 
-f = open("data/test-" + str(timestamp) + ".txt", 'w+')
+f = open("data/test.txt", 'w+')
 i = 1
 
 for mReview in parse(path):
